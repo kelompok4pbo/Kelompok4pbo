@@ -7,13 +7,13 @@ import javax.swing.table.DefaultTableModel;
 
 public class Tampildata extends javax.swing.JFrame {
     ArrayList<Data> rt1rw1 = new ArrayList<>();
-    ArrayList<data> rt2rw1 = new ArrayList<>();
-    ArrayList<data> rt3rw1 = new ArrayList<>();
-    ArrayList<data> rt4rw1 = new ArrayList<>();
-    ArrayList<data> rt1rw2 = new ArrayList<>();
-    ArrayList<data> rt2rw2 = new ArrayList<>();
-    ArrayList<data> rt3rw2 = new ArrayList<>();
-    ArrayList<data> rt4rw2 = new ArrayList<>();
+    ArrayList<Data> rt2rw1 = new ArrayList<>();
+    ArrayList<Data> rt3rw1 = new ArrayList<>();
+    ArrayList<Data> rt4rw1 = new ArrayList<>();
+    ArrayList<Data> rt1rw2 = new ArrayList<>();
+    ArrayList<Data> rt2rw2 = new ArrayList<>();
+    ArrayList<Data> rt3rw2 = new ArrayList<>();
+    ArrayList<Data> rt4rw2 = new ArrayList<>();
 DefaultTableModel dm;
     /**
      * Creates new form Tampildata
@@ -424,7 +424,7 @@ DefaultTableModel dm;
     }//GEN-LAST:event_txtAgamaActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-      data data = new data();
+      Data data = new Data();
       data.setNIK(textNIK.getText());
       data.setNama(textNama.getText());
       data.setTTL(textTTL.getText());
@@ -487,19 +487,19 @@ DefaultTableModel dm;
     private void tampildataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tampildataActionPerformed
       if(sortBjt.isSelected()){
             if(sortRt1.isSelected()){
-            for (data isi :rt1rw1){
+            for (Data isi :rt1rw1){
             datakolom(isi.getNama(), isi.getNIK(),isi.getAlamat(), isi.getTTL(), isi.getJkl(), isi.getRt(), isi.getDesa(), isi.getKecamatan(),isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
             }
             if(sortRt2.isSelected()){
-            for (data isi :rt2rw1){
+            for (Data isi :rt2rw1){
             datakolom(isi.getNama(), isi.getNIK(),isi.getAlamat(), isi.getTTL(), isi.getJkl(), isi.getRt(), isi.getDesa(), isi.getKecamatan(),isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
             }
             if(sortRt3.isSelected()){
-            for (data isi :rt3rw1){
+            for (Data isi :rt3rw1){
             datakolom(isi.getNama(), isi.getNIK(),isi.getAlamat(), isi.getTTL(), isi.getJkl(), isi.getRt(), isi.getDesa(), isi.getKecamatan(),isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
             }
             if(sortRt4.isSelected()){
-            for (data isi :rt4rw1){
+            for (Data isi :rt4rw1){
             datakolom(isi.getNama(), isi.getNIK(),isi.getAlamat(), isi.getTTL(), isi.getJkl(), isi.getRt(), isi.getDesa(), isi.getKecamatan(),isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
             }
             }
